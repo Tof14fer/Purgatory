@@ -305,6 +305,8 @@ GameObject:
   - component: {fileID: 1738078401}
   - component: {fileID: 1738078400}
   - component: {fileID: 1738078399}
+  - component: {fileID: 1738078404}
+  - component: {fileID: 1738078403}
   m_Layer: 0
   m_Name: PC
   m_TagString: Untagged
@@ -409,9 +411,45 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738078398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.82, y: -3.22, z: -0.12910748}
+  m_LocalPosition: {x: -6.82, y: -3.17, z: -0.12910748}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738078403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738078398}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60e60ed629f40a1abbd67ec517c1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0
+  JumpHeight: 0
+  GroundCheck: {fileID: 0}
+  GroundCheckRadius: 0
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1738078404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738078398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f60e60ed629f40a1abbd67ec517c1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 2
+  JumpHeight: 5
+  GroundCheck: {fileID: 460416080}
+  GroundCheckRadius: 1
+  WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 4294967295
