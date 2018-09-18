@@ -8,6 +8,7 @@ public class charactermovement : MonoBehaviour
     // Player Movement Variables
     public int MoveSpeed;
     public float JumpHeight;
+    private bool doublejump;
 
     // Player grounded Variables
     public Transform GroundCheck;
@@ -36,6 +37,16 @@ public class charactermovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && grounded)
         {
             Jump();
+        }
+
+        //Double Jump Code
+        if (grounded)
+            doublejump = false;
+
+        if (Input.GetKeyDown(KeyCode.W) && !doublejump && !grounded)
+        {
+            Jump();
+            doublejump = true;
         }
 
         // This codes makes the character move from side to side with A&D keys
