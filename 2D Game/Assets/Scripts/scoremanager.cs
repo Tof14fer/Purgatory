@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngin;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class scoremanager : MonoBehaviour{
     public static int score;
 
     Text scoretext;
@@ -27,7 +27,7 @@ public class NewBehaviourScript : MonoBehaviour {
         score += pointsToAdd;
     }
 
-    public static void Reset () {
-        score = 0;
-    }
+    //public static void Reset () {
+    //    score = 0;
+    //}
 }
