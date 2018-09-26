@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{3BD99DA7-BD93-6366-344B-4F2C33A41684}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/scoremanager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemypatrol.cs">
     <Files>
       <File FileName="Assets/Scripts/charactermovement14.cs" Line="31" Column="1" />
-      <File FileName="Assets/Scripts/scoremanager.cs" Line="26" Column="14" />
+      <File FileName="Assets/Scripts/scoremanager.cs" Line="33" Column="2" />
       <File FileName="Assets/Scripts/coinpickup.cs" Line="17" Column="2" />
+      <File FileName="Assets/Scripts/enemypatrol.cs" Line="39" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
