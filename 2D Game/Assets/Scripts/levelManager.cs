@@ -23,19 +23,19 @@ public class levelManager : MonoBehaviour
 
 	// Use this for initialization
 	private void Start(){
-        PC = FindObjectOfType<Controller2D>();
+        PC = FindObjectOfType<Rigidbody2D>();
         }
     public void RespawnPC(){
         StartCoroutine("RespawnPC");
     }
 
 
-    public IEnumerator RespawnPC(){
+    public IEnumerator RespawnPlayer(){
         //Generate Death Particle
-        Instantiate (deathParticle, PC.transform.position, PC.transform.rotation)
+        Instantiate(deathParticle, PC.transform.position, PC.transform.rotation);
         // Hide player
-        PC.enable = false;
-        PC.GetComponent<Renderer> ().enabled = false
+        //PC.enable = false;
+        PC.GetComponent<Renderer>().enabled = false;
         // Reset Gravity
         gravityStore = PC.GetComponent<Rigidbody2D>().gravityScale;
         PC.GetComponent<Rigidbody2D>().gravityScale = 0f;
@@ -51,6 +51,9 @@ public class levelManager : MonoBehaviour
         // Match Player transform postion
         PC.transform.position = currentCheckPoint.transform.position;
         //Show Player
-
+        //PC.enabled = true;
+        PC.GetComponent<Renderer>().enabled = true;
+        //Spawn player
+        Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }
 }

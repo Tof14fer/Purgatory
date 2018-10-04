@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class checkpoint : MonoBehaviour {
 
+    public levelManager levelManager;
+
 	// Use this for initialization
 	void Start () {
         levelManager = FindObjectOfType<levelManager>();
@@ -15,8 +17,9 @@ public class checkpoint : MonoBehaviour {
 
     }
 
-	void OnTriggerEnter2D(Collider2D collision){
-        if(other.name == "PC"){
+	void OnTriggerEnter2D(Collider2D other){
+        if (other.name == "PC")
+        {
             levelManager.currentCheckPoint = gameObject;
             Debug.Log("Activated Checkpoint" + transform.position);
         }
