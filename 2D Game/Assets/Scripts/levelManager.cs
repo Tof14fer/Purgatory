@@ -5,7 +5,7 @@ public class levelManager : MonoBehaviour
 {
 
     public GameObject currentCheckPoint;
-    private Rigidbody2D PC;
+    public Rigidbody2D PC;
     //particles
     public GameObject deathParticle;
     public GameObject respawnParticle;
@@ -23,14 +23,14 @@ public class levelManager : MonoBehaviour
 
 	// Use this for initialization
 	private void Start(){
-        PC = FindObjectOfType<Rigidbody2D>();
+    //    PC = FindObjectOfType<Rigidbody2D>();
         }
-    public void RespawnPC(){
+    public void RespawnPlayer(){
         StartCoroutine("RespawnPC");
     }
 
 
-    public IEnumerator RespawnPlayer(){
+    public IEnumerator RespawnPC(){
         //Generate Death Particle
         Instantiate(deathParticle, PC.transform.position, PC.transform.rotation);
         // Hide player
