@@ -79,7 +79,12 @@ public class charactermovement14 : MonoBehaviour
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
-
+        // Player Flip
+        if (GetComponent<Rigidbody2D>().velocity.x > 0)
+            transform.localScale = new Vector3(5f, 5f, 1f);
+        
+        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+            transform.localScale = new Vector3(-5f, 5f, 1f);
 
     }
     public void Jump(){
@@ -88,4 +93,4 @@ public class charactermovement14 : MonoBehaviour
     public void Drop(){
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, -JumpHeight);
     }
-}
+} 

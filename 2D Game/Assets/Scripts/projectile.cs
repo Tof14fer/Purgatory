@@ -26,7 +26,7 @@ public class projectile : MonoBehaviour {
             Speed = -Speed;
 	}
 
-	private void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Enemy"){
             Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
