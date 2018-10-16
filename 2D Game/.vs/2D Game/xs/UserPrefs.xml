@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/projectile.cs">
     <Files>
-      <File FileName="Assets/Scripts/charactermovement14.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/charactermovement14.cs" Line="84" Column="60" />
       <File FileName="Assets/Scripts/scoremanager.cs" Line="33" Column="2" />
       <File FileName="Assets/Scripts/coinpickup.cs" Line="5" Column="41" />
       <File FileName="Assets/Scripts/enemypatrol.cs" Line="21" Column="44" />
@@ -10,7 +10,7 @@
       <File FileName="Assets/Scripts/killplayer.cs" Line="11" Column="57" />
       <File FileName="Assets/Scripts/levelManager.cs" Line="24" Column="32" />
       <File FileName="Assets/Scripts/shootscript.cs" Line="13" Column="2" />
-      <File FileName="Assets/Scripts/projectile.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/projectile.cs" Line="29" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
