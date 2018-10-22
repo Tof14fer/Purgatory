@@ -25,12 +25,12 @@ public class enemypatrol : MonoBehaviour{
         }
            
         if (Moveright){
-            transform.localScale = new Vector3(-6f, 6f, 6f);
+            transform.localScale = new Vector3(-0.4f, 0.4f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(Movespeed, GetComponent<Rigidbody2D>().velocity.y);
         }
             
         else{
-            transform.localScale = new Vector3(6f, 6f, 6f);
+            transform.localScale = new Vector3(0.4f, 0.4f, 1f);
             GetComponent<Rigidbody2D>().velocity = new Vector2(-Movespeed, GetComponent<Rigidbody2D>().velocity.y);
         }
 
