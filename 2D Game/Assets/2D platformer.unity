@@ -34061,7 +34061,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777674757}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 53.572147, y: 11.717102, z: -2.7839403}
+  m_LocalPosition: {x: 57.17, y: 15.07, z: -2.7839403}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0}
   m_Children: []
   m_Father: {fileID: 562701674}
@@ -40325,6 +40325,41 @@ Prefab:
         type: 2}
       propertyPath: LightsModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198947991891566298, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: CustomDataModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199897575198347680, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 198947991891566298, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 199897575198347680, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198947991891566298, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.830163
+      objectReference: {fileID: 0}
+    - target: {fileID: 198947991891566298, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198947991891566298, guid: 804ed20297eaf435c9554002c52aa6b4,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 804ed20297eaf435c9554002c52aa6b4, type: 2}
