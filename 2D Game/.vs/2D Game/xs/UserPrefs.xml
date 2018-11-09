@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{3BD99DA7-BD93-6366-344B-4F2C33A41684}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/charactermovement14.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemypatrol2.cs">
     <Files>
-      <File FileName="Assets/Scripts/charactermovement14.cs" Line="84" Column="49" />
+      <File FileName="Assets/Scripts/charactermovement14.cs" Line="96" Column="3" />
       <File FileName="Assets/Scripts/scoremanager.cs" Line="33" Column="2" />
       <File FileName="Assets/Scripts/coinpickup.cs" Line="5" Column="41" />
       <File FileName="Assets/Scripts/enemypatrol.cs" Line="39" Column="3" />
@@ -12,6 +12,8 @@
       <File FileName="Assets/Scripts/shootscript.cs" Line="13" Column="2" />
       <File FileName="Assets/Scripts/projectile.cs" Line="39" Column="2" />
       <File FileName="Assets/Scripts/camerafollow.cs" Line="11" Column="29" />
+      <File FileName="Assets/Scripts/deathbox.cs" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/enemypatrol2.cs" Line="44" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
