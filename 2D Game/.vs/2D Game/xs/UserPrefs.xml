@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{3BD99DA7-BD93-6366-344B-4F2C33A41684}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/enemypatrol2.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/deathbox.cs">
     <Files>
       <File FileName="Assets/Scripts/charactermovement14.cs" Line="96" Column="3" />
       <File FileName="Assets/Scripts/scoremanager.cs" Line="33" Column="2" />
@@ -9,11 +9,11 @@
       <File FileName="Assets/Scripts/checkpoint.cs" Line="20" Column="42" />
       <File FileName="Assets/Scripts/killplayer.cs" Line="11" Column="57" />
       <File FileName="Assets/Scripts/levelManager.cs" Line="24" Column="32" />
+      <File FileName="Assets/Scripts/deathbox.cs" Line="15" Column="2" />
       <File FileName="Assets/Scripts/shootscript.cs" Line="13" Column="2" />
       <File FileName="Assets/Scripts/projectile.cs" Line="39" Column="2" />
       <File FileName="Assets/Scripts/camerafollow.cs" Line="11" Column="29" />
-      <File FileName="Assets/Scripts/deathbox.cs" Line="15" Column="2" />
-      <File FileName="Assets/Scripts/enemypatrol2.cs" Line="44" Column="2" />
+      <File FileName="Assets/Scripts/enemypatrol2.cs" Line="3" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
