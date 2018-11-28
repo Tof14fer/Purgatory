@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{3BD99DA7-BD93-6366-344B-4F2C33A41684}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/shootscript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/main_menu.cs">
     <Files>
       <File FileName="Assets/Scripts/charactermovement14.cs" Line="96" Column="3" />
       <File FileName="Assets/Scripts/scoremanager.cs" Line="33" Column="2" />
@@ -15,6 +15,7 @@
       <File FileName="Assets/Scripts/camerafollow.cs" Line="11" Column="29" />
       <File FileName="Assets/Scripts/enemypatrol2.cs" Line="3" Column="19" />
       <File FileName="Assets/Scripts/DestroyFinishedParticle.cs" Line="18" Column="9" />
+      <File FileName="Assets/Scripts/main_menu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
