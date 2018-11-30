@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class main_menu : MonoBehaviour {
+    public class main_menu : MonoBehaviour {
 
     public int levelToLoad;
 	
