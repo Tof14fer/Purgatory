@@ -19,14 +19,13 @@ public class charactermovement14 : MonoBehaviour
     //Non-Stick Player
     private float moveVelocity;
 
-    //Player Sprint
-
-
-
+    public Animator animator;
     // Use this for initialization
     void Start()
+    // Animation reset
     {
-
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isJumping", false);
     }
 
 
@@ -37,7 +36,7 @@ public class charactermovement14 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
         // This code makes the character jump
@@ -48,7 +47,10 @@ public class charactermovement14 : MonoBehaviour
 
         //Double Jump Code
         if (grounded)
+        {
             doublejump = false;
+            animator.SetBool("isJumping", false);
+        }
 
         if (Input.GetKeyDown(KeyCode.W) && !doublejump && !grounded)
         {
@@ -68,29 +70,41 @@ public class charactermovement14 : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-            moveVelocity = MoveSpeed;
+            moveVelocity = +MoveSpeed;
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("isWalking", false);
         }
         if (Input.GetKey(KeyCode.A))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = -MoveSpeed;
-
+            animator.SetBool("isWalking", true);
         }
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("isWalking", false);
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
-        // Player Flip
-        if (GetComponent<Rigidbody2D>().velocity.x > 0)
-            transform.localScale = new Vector3(0.09f, 0.09f, 1f);
-        
-        else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-            transform.localScale = new Vector3(-0.09f, 0.09f, 1f);
+            // Player Flip
+            if (GetComponent<Rigidbody2D>().velocity.x > 0)
+                transform.localScale = new Vector3(0.09f, 0.09f, 1f);
 
+            else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+                transform.localScale = new Vector3(-0.09f, 0.09f, 1f);
+        }
     }
-    public void Jump(){
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
-    }
-    public void Drop(){
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, -JumpHeight);
-    }
-} 
+
+        public void Jump()
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
+            animator.SetBool("isJumping", true);
+        }
+        public void Drop()
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, -JumpHeight);
+        }
+}
