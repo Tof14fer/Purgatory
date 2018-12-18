@@ -249,7 +249,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a117742b29c234647a450c8b371931a6, type: 3}
+    m_Font: {fileID: 12800000, guid: 9e04319cee65446cf9f390c3410d89e4, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -300,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 65}
-  m_SizeDelta: {x: 1104.3, y: 369.7}
+  m_AnchoredPosition: {x: -0.0000076294, y: 79}
+  m_SizeDelta: {x: 1237, y: 359.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373521075
 MonoBehaviour:
@@ -323,9 +323,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 781b8e33b36374c9b94b778cc8f405de, type: 3}
-    m_FontSize: 250
-    m_FontStyle: 3
+    m_Font: {fileID: 12800000, guid: 9e04319cee65446cf9f390c3410d89e4, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 300
@@ -335,7 +335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Senic's Epic Adventure
+  m_Text: Senics Epic Adventure
 --- !u!222 &373521076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: a117742b29c234647a450c8b371931a6, type: 3}
+    m_Font: {fileID: 12800000, guid: 9e04319cee65446cf9f390c3410d89e4, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
